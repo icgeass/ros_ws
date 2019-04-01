@@ -59,6 +59,12 @@
   <exec_depend>rospy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
 
+<!--  使用exec_depend而不是run_depend标签
+  否则报错
+  Error(s):
+    - The manifest (with format version 2) must not contain the following tags: run_depend-->
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
