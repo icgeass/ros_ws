@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  # message_generation 对msg和srv都起作用
   message_generation
 )
 
@@ -52,14 +53,15 @@ add_message_files(
     FILES
     UserInfo.msg
     UserInfos.msg
+    KeyValue.msg
 )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+    FILES
+    AddTwoInts.srv
+    GetKeyValues.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
