@@ -25,7 +25,7 @@ def on_messgae_3(request):
     user_infos = request.user_infos
     lines = ''
     for item in user_infos:
-        rospy.loginfo('user_info.first_name=%s', item.first_name)
+        rospy.loginfo('%s user_info.first_name=%s', ros_pkg_1_node_1_log_prefix, item.first_name)
         lines = lines + str(item) + '\n------\n'
     rospy.loginfo('%s 收到嵌套消息: header.seq=%s, header.frame_id=%s, header.stamp=%s, id=%s, user_infos=%s',
                   ros_pkg_1_node_1_log_prefix,

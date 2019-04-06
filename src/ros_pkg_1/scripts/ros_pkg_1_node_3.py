@@ -19,7 +19,7 @@ ros_pkg_1_node_3_service_proxy = None
 
 
 def service_call_and_msg_publish(request):
-    re = TriggerResponse(success=False, message='msg')
+    re = TriggerResponse(success=False, message='default')
     try:
         rospy.loginfo('%s request=%s', ros_pkg_1_node_3_log_prefix, str(request))
 
