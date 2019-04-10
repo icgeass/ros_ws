@@ -3,6 +3,11 @@
     <node name="ros_pkg_1_node_1" pkg="ros_pkg_1" type="ros_pkg_1_node_1.py" output="$(arg output)"/>
     <node name="ros_pkg_1_node_2" pkg="ros_pkg_1" type="ros_pkg_1_node_2.py" output="$(arg output)"/>
     <node name="ros_pkg_1_node_3" pkg="ros_pkg_1" type="ros_pkg_1_node_3.py" output="$(arg output)"/>
+    <!--actionlib-->
+    <node name="ros_pkg_1_node_4" pkg="ros_pkg_1" type="ros_pkg_1_node_4.py" output="$(arg output)"/>
+    <node name="ros_pkg_1_node_5" pkg="ros_pkg_1" type="ros_pkg_1_node_5.py" output="$(arg output)"/>
+
+
 </launch>
 
 

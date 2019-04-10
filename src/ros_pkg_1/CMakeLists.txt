@@ -13,6 +13,10 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   # message_generation 对msg和srv都起作用
   message_generation
+  # actionlib
+  genmsg
+  actionlib_msgs
+  actionlib
 )
 
 ## System dependencies are found with CMake's conventions
@@ -64,16 +68,17 @@ add_service_files(
 )
 
 ## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
-#   Action2.action
-# )
+add_action_files(
+    FILES
+    DoDishes.action
+)
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
     DEPENDENCIES
     std_msgs
+    # actionlib
+    actionlib_msgs
 )
 
 ################################################
