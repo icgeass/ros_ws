@@ -30,9 +30,8 @@ class DoDishesServer:
             self.server.publish_feedback(DoDishesFeedback(percent_complete=wait_seconds / all_wait_seconds * 100))
         rospy.loginfo('%s actionlib execute completed!', ros_pkg_1_node_5_log_prefix)
         self.server.set_succeeded(result=DoDishesResult(total_dishes_cleaned=wait_seconds), text='all dishes done!')
+        wait_seconds = 0.0
 
-    def processing(self):
-        return wait_seconds
 
 
 if __name__ == '__main__':

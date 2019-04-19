@@ -20,7 +20,7 @@ def wait_finished(client):
         rospy.loginfo('%s waiting completed...', ros_pkg_1_node_4_log_prefix)
         time.sleep(1)
         finished = client.wait_for_result(rospy.Duration.from_sec(1.0))
-    rospy.loginfo('%s actionlib execute completed!', ros_pkg_1_node_4_log_prefix)
+    rospy.loginfo('%s actionlib execute completed!, state=%s, result=%s', ros_pkg_1_node_4_log_prefix, client.get_state(), client.get_result())
 
 
 # TODO
